@@ -100,3 +100,257 @@
     align-items: center;
   }
 }
+@import url(common.css);
+
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.curriculum-roadmap{
+  position:relative;
+  max-width:1272px;
+  width:100%;
+  margin:0 auto;
+  padding:0 50px;
+  box-sizing:border-box;
+}
+.curriculum-item-week{
+  font-size:1rem;
+  display:block;
+  line-height:19.1px;
+  margin-top:20px;
+}
+.roadmap-line{
+  position:absolute;
+  height:1px;
+  width:100%;
+  left:0;
+  background:var(--e-s-t_blue);
+  top:110px;
+}
+.roadmap-items{
+  display:flex;
+  justify-content: space-between;
+  position:relative;
+  z-index:2;
+  margin:90px 0 96px 0;
+}
+.roadmap-item{
+  width:40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  position:relative;
+}
+.roadmap-item:not(:last-child)::after{
+  content:'';
+  position:absolute;
+  top:20px;
+  left:calc(243px / 2);
+  width:10px;
+  height:10px;
+  background-color:var(--e-s-t_blue);
+  border-radius:50%;
+  transform:translate(-50%, -50%);
+  z-index:1;
+}
+.roadmap-item-title,
+.curriculum-item-desc {
+  width: max-content; /* ★ 핵심: 글자 길이에 맞춰서 너비를 가짐 */
+  text-align: center;
+  white-space: nowrap; /* ★ 핵심: 부모가 좁아도 줄바꿈 금지 */
+}
+.roadmap-item-title::after{
+  content:"";
+  display:block;
+  height:1px;
+  background-color:var(--liner);
+  width:163px;
+  margin:10px auto;
+}
+.roadmap-item-title .curriculum-item-week{
+  margin-bottom:10px;
+}
+.roadmap-item:first-child .roadmap-item-title::after,
+.roadmap-item:last-child .roadmap-item-title::after{
+  width:140px;
+  margin:10px auto;
+}
+.roadmap-dot{
+  width:40px;
+  height:40px; 
+  background-color:#d9e5ff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  gap:243px;
+  position:relative;
+  z-index:3;
+  box-shadow:0 0 20px rgba(0, 117, 255, .4);
+}
+.roadmap-dot::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--e-s-t_blue);
+  filter:blur(2px);
+  border-radius: 50%;
+}
+#curriculum .btn{
+  width:120px;
+  line-height:34px;
+  font-size:var(--text-p);
+  color:var(--e-s-t_blue);
+  background-color:var(--medium--blue);
+  text-align:center;
+  border-radius:5px;
+  transition:.3s;
+  cursor:pointer;
+}
+#curriculum .btn:hover{
+  background-color:var(--e-s-t_blue);
+  color:var(--white);
+}
+
+/* @media (max-width: 1024px) {
+  .roadmap-items {
+    height: 300px; 
+    display: flex;
+    align-items: center; 
+  }
+
+  .roadmap-item {
+    position: relative;
+    width: 40px;
+  }
+  .roadmap-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .roadmap-item:nth-child(odd) .roadmap-item-title {
+    margin-bottom: 80px;
+  }
+  .roadmap-item:nth-child(even) .roadmap-item-title {
+    margin-top: 80px; 
+  }
+  .roadmap-line{
+    top:240px;
+  }
+  .roadmap-item:not(:last-child)::after {
+  top: 50%; 
+  left: calc(243px / 2); 
+  transform: translate(-50%, -50%);
+  }
+} */
+
+
+.hero{
+    background-image: url(/img/jeju_orumi_background.jpg);
+    height: 720px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero .hero-content-subtitle{
+    font-family: Pretendard;
+    font-weight: semibold;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--medium--biue)
+}
+
+.hero .hero-content-description{
+    margin-bottom: 54px;
+}
+
+.hero h2{
+    margin-bottom: 12px;
+    color: white;
+}
+
+.hero p{
+    color: white;
+}
+
+
+
+.camp-story{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.camp-story .header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px 324px 60px 324px;
+    gap: 10px;
+}
+
+.camp-story-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.camp-story .main-card{
+    padding-right: 27px;
+}
+
+.camp-story .card-text{
+  background-color: var(--light--gray);
+  border-radius: 0 0 10px 10px;
+}
+
+.card-text .main-card-title{
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.card-text .main-card-subtitle
+{
+  padding-left: 20px;
+}
+
+.card-text .icon{
+  padding: 14px 10px 14px 10px;
+  font-size: 24px;
+  color: var(--e-s-t_blue);
+}
+
+
+.small-card-title{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    background-color: var(--light--gray);
+    color: var(--black);
+    padding: 10px 0px 10px 10px;
+    border: 1px solid red;
+    border-radius: 0 0 10px 10px;
+}
+
+.camp-story .icon{
+    text-align: right;
+    color: var(--e-s-t_blue);
+}
+
+
+.camp-story-sidelist{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
