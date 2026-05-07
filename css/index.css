@@ -1,0 +1,45 @@
+/* 과정 찾기 섹션 */
+
+.container{
+  display:flex;
+  justify-content: space-between;
+}
+.course-intro{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.course-title{
+  line-height:43px;
+}
+#course .title-line{
+  display:block;
+}
+.course-grid{
+  max-width:840px;
+  width: 100%;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:24px;
+}
+.course-card{
+  padding:30px;
+  display:flex;
+  min-height:216px;
+  justify-content: space-between;
+  box-sizing:border-box;
+  border-radius:5px;
+  background-color:var(--white);
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.14);
+}
+.course-card-info{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.course-card-image{
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  flex-shrink:0;
+}

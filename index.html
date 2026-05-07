@@ -12,97 +12,6 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    body{
-      font-family:Arial, sans-serif;
-      background:#f5f5f5;
-    }
-
-    /* blue block */
-
-    .banner{
-      width:100%;
-      height:320px;
-      background:linear-gradient(135deg,#081a52,#1f4ed8,#6d28d9);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      color:white;
-    }
-
-    .banner-content{
-      text-align:center;
-    }
-
-    .banner-content h1{
-      font-size:48px;
-      margin-bottom:20px;
-    }
-
-    .banner-content p{
-      font-size:22px;
-      margin-bottom:25px;
-    }
-
-    .banner-content button{
-      padding:12px 30px;
-      border:none;
-      border-radius:30px;
-      background:white;
-      color:#1f4ed8;
-      font-weight:bold;
-      cursor:pointer;
-    }
-
-    /* 밑블럭 */
-
-    .content{
-      width:1100px;
-      margin:50px auto;
-      background:white;
-      padding:50px;
-      border-radius:20px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    .content h2{
-      font-size:36px;
-      margin-bottom:20px;
-      color:#111;
-    }
-
-    .content p{
-      color:#666;
-      line-height:1.7;
-      margin-bottom:30px;
-    }
-
-    .cards{
-      display:flex;
-      gap:25px;
-    }
-
-    .card{
-      flex:1;
-      background:#f0f4ff;
-      padding:30px;
-      border-radius:15px;
-    }
-
-    .card h3{
-      margin-bottom:15px;
-      color:#1f4ed8;
-    }
-
-  </style>
-
 </head>
 <body>
 <!-- 헤더 -->
@@ -196,47 +105,57 @@
 <!-- //송주윤 -->
 <!-- 과정 찾기 섹션 -->
   <!-- 강채희 -->  
-  <section class="course">
-    <div class="course-container">
-      <header class="course-intro">
-          <h2 class="course-title">나에게 맞는 <span>부트캠프 과정</span> 찾기</h2>
-          <a href="#" class="course-cta">자세히 보기</a>
-      </header>
+  <section id="course" class="bg-surface">
+    <div class="container">
+      <div class="course-intro">
+          <h2 class="course-title">
+            <span class="title-line">나에게 맞는</span> 
+            <span class="primary-color">부트캠프 과정</span> 찾기
+          </h2>
+          <a href="#" class="btn btn-primary btn-md">과정 더보기</a>
+      </div>
       <div class="course-grid">
         <article class="course-card">
             <div class="course-card-info">
-                <h3 class="course-card-title">입문자<span>기초</span>다지기</h3>
+                <h3 class="course-card-title"><span class="title-line">입문자</span>
+                  <span class="primary-color">기초</span>다지기</h3>
                 <p class="course-card-desc">프로그래밍 기초</p>
             </div>
             <div class="course-card-image">
-                <img src="" alt="입문자 과정을 안내하는 알약 캐릭터">
+                <img src="./images/course.png" alt="입문자 과정을 안내하는 알약 캐릭터">
             </div>
         </article>
         <article class="course-card">
             <div class="course-card-info">
-                <h3 class="course-card-title">프론트엔드<span>핵심 인재</span>양성</h3>
+                <h3 class="course-card-title">
+                  <span class="title-line">프론트엔드</span>
+                  <span class="primary-color">핵심 인재</span>양성</h3>
                 <p class="course-card-desc">React, TypeScript 마스터</p>
             </div>
             <div class="course-card-image">
-                <img src="" alt="프론트엔드 과정을 알약 캐릭터">
+                <img src="./images/course.png" alt="프론트엔드 과정을 알약 캐릭터">
             </div>
         </article>
         <article class="course-card">
             <div class="course-card-info">
-                <h3 class="course-card-title">데이터 분석<span>AI 트렌드</span> 리딩</h3>
+                <h3 class="course-card-title">
+                  <span class="title-line">데이터 분석</span>
+                  <span class="primary-color">AI 트렌드</span> 리딩</h3>
                 <p class="course-card-desc">Python, 데이터 시각화</p>
             </div>
             <div class="course-card-image">
-                <img src="" alt="데이터분석 과정을 알약 캐릭터">
+                <img src="./images/course.png" alt="데이터분석 과정을 알약 캐릭터">
             </div>
         </article>
         <article class="course-card">
             <div class="course-card-info">
-                <h3 class="course-card-title">가디언즈 <span>인프라보안</span></h3>
+                <h3 class="course-card-title">
+                  <span class="title-line">가디언즈</span> 
+                  <span class="primary-color">인프라보안</span></h3>
                 <p class="course-card-desc">보안 관제, 침해 사고 대응</p>
             </div>
             <div class="course-card-image">
-                <img src="" alt="인프라보안 과정을 안내하는 알약 캐릭터">
+                <img src="./images/course.png" alt="인프라보안 과정을 안내하는 알약 캐릭터">
             </div>
         </article>
       </div>

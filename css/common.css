@@ -1,8 +1,101 @@
 /* 변수 */
+:root{
+/* Color styles */
+--black: rgba(0, 0, 0, 1);
+--white: rgba(255, 255, 255, 1);
+--medium--black: rgba(33, 33, 33, 1);
+--e-s-t_blue: rgba(0, 117, 255, 1);
+--medium--gray: rgba(107, 118, 132, 1);
+--light--gray: rgba(217, 217, 217, 1);
+--light--blue: rgba(240, 247, 255, 1);
+--medium--biue: rgba(229, 241, 255, 1);
+--liner: rgba(162, 162, 162, 1);
+--slides-gray: rgba(238, 238, 238, 1);
+--medium-gray2: rgba(104, 104, 104, 1);
+--darkmode-section: rgba(17, 24, 39, 1);
+--darkmode-card: rgba(26, 34, 54, 1);
+--darkmode-h2: rgba(248, 250, 252, 1);
+--darkmode_main-p: rgba(203, 213, 225, 1);
+--darkmode-p: rgba(148, 163, 184, 1);
+--darkmode-inactive: rgba(100, 116, 139, 1);
+--darkmode-h3: rgba(248, 250, 252, 1);
+--darkmode-category: rgba(129, 140, 248, 1);
+--darkmode-primary-button: rgba(99, 102, 241, 1);
+--darkmode-primary-button-text: rgba(248, 250, 252, 1);
+
+/* Text-size styles */
+--text-title-xl: 56px;
+--text-h2-lg: 36px;
+--text-h3-md: 24px;
+--text-h4-sm: 16px;
+--text-p: 14px;
+--text-link: 14px;
+--button--big: 18px;
+--button--s: 14px;
+
+/* Effect styles */
+--review_shadow:  0px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
 
 /* 레이아웃 */
+.container{
+  max-width:1272px;
+  margin:0 auto;
+}
+.hidden{
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+}
+section{
+  padding:80px 0;
+}
+.bg-surface{
+  background-color:#f9f9f9;
+}
 /* 타이포그래피 */
+.primary-color{
+  color:var(--e-s-t_blue);
+}
+h2{
+  font-size:var(--text-h2-lg);
+  color:var(--medium--black);
+  font-weight:700;
+}
+h3{
+  font-size:var(--text-h3-md);
+  font-weight:700;
+  line-height:28.6px;
+}
+p{
+  font-size:var(--text-p);
+  line-height:27px;
+  color:var(--medium--gray);
+}
 /* 링크 버튼 */
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--e-s-t_blue);
+  color:var(--white);
+  border-radius:5px;
+  font-size:var(--text-link);
+  transition:0.3s;
+}
+.btn-primary:hover{
+  background-color:var(--medium--biue);
+  color:var(--e-s-t_blue);
+}
+.btn-md{
+  width:108px;
+  height:36px;
+  font-size:14px;
+  vertical-align:baseline;
+}
 
 /* 헤더 -  */
 /* 푸터 -  */
