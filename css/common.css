@@ -56,6 +56,16 @@ section{
 .bg-surface{
   background-color:#f9f9f9;
 }
+@media (max-width:1024px){
+  section{
+    padding:60px 30px;
+  }
+}
+@media (max-width:768px){
+  section{
+    padding:40px 20px;
+  }
+}
 /* 타이포그래피 */
 .primary-color{
   color:var(--e-s-t_blue);
