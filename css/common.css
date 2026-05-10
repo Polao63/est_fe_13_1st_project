@@ -87,30 +87,30 @@ body {
   height: 320px;
   /* background-image: url("../banner2.png");*/
   background: url("../banner2.png") center/cover no-repeat !important;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
 
   position: relative;
   overflow: hidden;
 }
 
 .banner-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.banner-text {
+  text-align: left;
 }
 
 .banner-content p {
   font-size: 36px !important;
-  font-size: var(--text-h2-lg);
   font-weight: 600;
   color: white;
   line-height: 1.3;
-  margin-bottom: 25px;
+  margin: 0;
 }
 
 .banner-content button {
@@ -121,42 +121,27 @@ body {
   color: #1f4ed8;
   font-weight: bold;
   cursor: pointer;
-}
-/* wink robot */
-.peek-robot {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%) rotate(-50deg);
-  right: -130px;
-  opacity: 0;
-  z-index: 999;
-  transition: all 0.8s ease;
-}
-.peek-robot img {
-  width: 190px;
-}
-.peek-robot.show {
-  right: -80px;
-  opacity: 1;
+  margin:0;
 }
 
 /* 밑블럭 */
 
 .content {
-  position: relative;
-  max-width: 1100px;
   width: 100%;
-  margin: 50px auto;
   background: white;
-  padding: 50px;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
 
+  padding: 60px 220px;
+  box-sizing: border-box;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .content h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  margin-left: 0;
+  text-align: left;
   color: #111;
 }
 
@@ -164,10 +149,12 @@ body {
   color: #666;
   line-height: 1.7;
   margin-bottom: 30px;
+  margin-left: 0;
+  text-align: left;
 }
 
 .cards {
-  display: flex;
+  display: none;
   gap: 25px;
 }
 
@@ -186,22 +173,35 @@ body {
 }
 .footer-icons {
   display: flex;
-  position: absolute;
-  right: 60px;
-  top: 100px;
   gap: 12px;
+  align-items: center;
+
 }
 .footer-icons img {
   width: 30px;
   height: 30px;
 }
+
+.logo-img {
+  margin-bottom: 40px;
+}
+  
 .footer-text {
-  margin-top: 20px;
-  padding-top: 20px;
+  padding: 0;
+  margin: 0px;
   font-size: 12px;
   color: #666;
 }
-
+.footer-text p {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+.footer-line {
+  width: 1000px;
+  height: 1px;
+  background: #dcdcdc;
+  margin: 25px 0;
+}
 @media screen and (max-width: 768px) {
   .cards {
     flex-direction: column;
