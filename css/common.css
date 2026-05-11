@@ -52,7 +52,7 @@
     rgb(104, 104, 104),
     rgb(148, 163, 184)
   );
-
+  --primary-invert: light-dark(#0075ff, #ffffff);
   --darkmode-card: rgba(26, 34, 54, 1);
 
   --darkmode_main-p: rgba(203, 213, 225, 1);
@@ -73,7 +73,7 @@
     rgb(249, 249, 249),
     #0b1020
   );
-
+  --surface-soft: light-dark(#f0f7ff, #64748b);
   --section-label: light-dark(
     var(--e-s-t_blue),
     var(--e-s-t_blue)
@@ -83,7 +83,7 @@
     var(--medium--black),
     #F8FAFC
   );
-
+  --surface-inverse: light-dark(#ffffff, #64748b);
   --text-muted: light-dark(
     var(--medium--gray),
     #94A3B8
@@ -156,6 +156,10 @@
     #CBD5E1
   );
 
+  --surface-from-gray: light-dark(
+  var(--medium--gray),
+  #1A2236
+);
   /* Button */
   --btn-strong: light-dark(
     var(--e-s-t_blue),
@@ -180,6 +184,11 @@
     var(--darkmode-card)
   );
   
+  --medium--blue-muted: light-dark(
+  var(--medium--blue),
+  #6b7684
+  
+);
 /* Title */
   --text-title-xl: 56px;
 
@@ -196,6 +205,15 @@
   /* Button */
   --button--big: 18px;
   --button--s: 14px;
+  --surface-muted: light-dark(#f5f5f5, #1A2236);
+--icon-accent: light-dark(
+  var(--e-s-t_blue),
+  var(--white)
+);
+--surface-gray: light-dark(
+  #d9d9d9,
+  #1A2236
+);
 }
 
 body{
@@ -686,7 +704,9 @@ p{
   transition: 0.3s;
 }
 
-
+.slide-btn.prev{
+  background-color:var(--surface-gray);
+}
 .btn-primary{
   display:inline-flex;
   align-items:center;
@@ -751,29 +771,28 @@ p{
 }
 
 .slide-btn:hover {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
+  background: var(--medium--blue-muted);
+  color: var(--icon-accent);
 }
 .slide-btn.next {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
+  background-color:var(--medium--blue-muted);
+  color: var(--icon-accent);
 }
 
-.review-item {
-  background: var(--card-bg2);
-  border-radius: 5px;
-}
 .review-text {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color:var(--card-bg2);
 }
 .review-text h3 {
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 .review-text p{
-  padding-top: 20px
+  padding-top: 20px;
 }
 /* 헤더 -  */
 .intro-header {
