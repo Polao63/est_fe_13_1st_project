@@ -760,7 +760,7 @@ p{
 }
 
 .review-item{
-  background:var(--card-bg2)
+  background:var(--card-bg2);
   border-radius: 5px;
 }
 .review-text {
