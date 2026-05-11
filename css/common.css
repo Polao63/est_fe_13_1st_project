@@ -759,14 +759,14 @@ p{
   color: var(--e-s-t_blue);
 }
 
-.review-item{
-  background:var(--card-bg2);
+.review-item {
+  background: var(--card-bg2);
   border-radius: 5px;
 }
 .review-text {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding: 20px;
 }
 .review-text h3 {
   word-break: keep-all;
