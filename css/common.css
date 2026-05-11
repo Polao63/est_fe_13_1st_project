@@ -131,9 +131,17 @@
   background: var(--card-bg2);
   color: var(--slide-ctg);
 }
+[data-theme="dark"] .online-category .disabled:hover {
+  background: var(--slide-ctg);
+  color: var(--text-base);
+}
 [data-theme="dark"] .slides_nav .prev {
   background: var(--card-bg2);
   color: var(--slide-ctg);
+}
+[data-theme="dark"] .slides_nav .prev:hover {
+  background: var(--slide-ctg);
+  color: var(--text-base);
 }
   /* online 버튼 */
 /* 버튼 */
