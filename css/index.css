@@ -59,11 +59,15 @@
   }
 }
 @media (max-width: 768px) {
-  .online-intro{
+  .online-content ul{
+    justify-content: center;
+  }
+  .intro-header{
     align-items: center;
+    justify-content: center;
   }
   .slides_nav {
-    display: none;
+    justify-content: center;
   }
   .text-h2-lg {
     font-size: 26px;
