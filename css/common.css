@@ -777,10 +777,11 @@ p{
 }
 
 .review-text {
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
   background-color:var(--card-bg2);
 }
 .review-text h3 {
@@ -788,7 +789,7 @@ p{
   overflow-wrap: break-word;
 }
 .review-text p{
-  padding-top: 20px
+  padding-top: 20px;
 }
 /* 헤더 -  */
 .intro-header {
