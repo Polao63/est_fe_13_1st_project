@@ -28,7 +28,7 @@
   --slides-gray: light-dark(rgba(238, 238, 238, 1), rgba(26, 34, 54, 1));
 
   --medium-gray2: light-dark(rgb(104, 104, 104), rgb(148, 163, 184));
-
+  --primary-invert: light-dark(#0075ff, #ffffff);
   --darkmode-card: rgba(26, 34, 54, 1);
 
   --darkmode_main-p: rgba(203, 213, 225, 1);
@@ -38,16 +38,15 @@
   --darkmode-inactive: rgba(100, 116, 139, 1);
 
   --darkmode-btn-text: #f8fafc;
-  --card-base: #f5f5f5;
 
   --bg-base: light-dark(rgb(255, 255, 255), #111827);
 
   --bg-muted: light-dark(rgb(249, 249, 249), #0b1020);
-
+  --surface-soft: light-dark(#f0f7ff, #64748b);
   --section-label: light-dark(var(--e-s-t_blue), var(--e-s-t_blue));
 
   --text-base: light-dark(var(--medium--black), #f8fafc);
-
+  --surface-inverse: light-dark(#ffffff, #64748b);
   --text-muted: light-dark(var(--medium--gray), #94a3b8);
 
   --text-muted2: light-dark(var(--medium--gray), #cbd5e1);
@@ -78,6 +77,7 @@
 
   --roadmap-text-color: light-dark(var(--e-s-t_blue), #cbd5e1);
 
+  --surface-from-gray: light-dark(var(--medium--gray), #1a2236);
   /* Button */
   --btn-strong: light-dark(var(--e-s-t_blue), #6366f1);
   --btn-active: light-dark(var(--medium--blue), var(--medium--gray));
@@ -87,6 +87,7 @@
 
   --btn-inactive-review: light-dark(var(--light--gray), var(--darkmode-card));
 
+  --medium--blue-muted: light-dark(var(--medium--blue), #6b7684);
   /* Title */
   --text-title-xl: 56px;
 
@@ -103,6 +104,9 @@
   /* Button */
   --button--big: 18px;
   --button--s: 14px;
+  --surface-muted: light-dark(#f5f5f5, #1a2236);
+  --icon-accent: light-dark(var(--e-s-t_blue), var(--white));
+  --surface-gray: light-dark(#d9d9d9, #1a2236);
 }
 
 body {
@@ -400,7 +404,6 @@ section {
   width: fit-content;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 30px;
   gap: 20px;
 }
 .reviewtitle > span {
@@ -422,7 +425,6 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  color: var(--text-muted);
 }
 /* .faq_more {
   display: flex;
@@ -608,6 +610,9 @@ p {
   transition: 0.3s;
 }
 
+.slide-btn.prev {
+  background-color: var(--surface-gray);
+}
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -671,22 +676,21 @@ p {
 }
 
 .slide-btn:hover {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
+  background: var(--medium--blue-muted);
+  color: var(--icon-accent);
 }
 .slide-btn.next {
-  background: var(--medium--blue);
-  color: var(--e-s-t_blue);
+  background-color: var(--medium--blue-muted);
+  color: var(--icon-accent);
 }
 
-.review-item {
-  background: var(--card-bg2);
-  border-radius: 5px;
-}
 .review-text {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color: var(--card-bg2);
 }
 .review-text h3 {
   word-break: keep-all;
