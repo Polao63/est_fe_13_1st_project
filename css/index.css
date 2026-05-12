@@ -1472,7 +1472,7 @@ footer{
 }
 .small-card{
   background-color:var(--surface-muted);
-      border-radius: 10px;
+  border-radius:0 0 10px 10px;
 }
 .small-card-title{
     display: flex;
