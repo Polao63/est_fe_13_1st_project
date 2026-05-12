@@ -126,7 +126,7 @@
 /* 배너 이미지 */
 .title-hero {
   height: 800px;
-  background-image: url(/images/hero-banner.jpg);
+  background-image: url(/images/hero.webp);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -1177,7 +1177,7 @@ header .btn-md {
   width:100%;
   min-height:100%;
   padding:149px 0;
-  background:url("../images/banner.jpg") no-repeat center / cover;
+  background:url("../images/banner.webp") no-repeat center / cover;
   box-sizing:border-box;
 }
 .banner-content{
@@ -1321,7 +1321,7 @@ footer{
 }
 
 .hero{
-    background-image: url(/images/jeju_orumi_background.jpg);
+    background-image: url(/images/jeju_orumi_background.webp);
     height: 720px;
     background-repeat:no-repeat;
     background-size: cover;
