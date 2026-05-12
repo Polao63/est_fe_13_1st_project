@@ -62,6 +62,7 @@
   --darkmode-inactive: rgba(100, 116, 139, 1);
 
   --darkmode-btn-text: #f8fafc;
+  --card-base: #F5F5F5;
 
   --bg-base: light-dark(
     rgb(255, 255, 255),
@@ -309,29 +310,6 @@ p {
 .Button-Big {
   font-size: var(--button--big);
 }
-/* h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-  line-height: 81px;
-  color: var(--white);
-} */
-
-/* h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-  line-height: 81px;
-  color: var(--white);
-} */
-
-/* h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-  line-height: 81px;
-  color: var(--white);
-} */
 
 h2{
   font-family: Pretentard;
@@ -495,6 +473,7 @@ section {
   width: fit-content;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 30px;
   gap: 20px;
 }
 .reviewtitle > span {
@@ -516,11 +495,9 @@ section {
   position: absolute;
   top: 0;
   right: 0;
+  color: var(--text-muted);
 }
-/* .faq_more {
-  display: flex;
-  justify-content: flex-end;
-} */
+
 .fqa_question {
   display: flex;
   justify-content: space-between;
