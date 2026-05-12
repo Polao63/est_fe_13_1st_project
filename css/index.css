@@ -1366,16 +1366,6 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-/* 
-.camp-story .header{
-    width: 1272px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 60px;
-    align-items: top left;
-    gap: 10px;
-} */
 
 .camp-story-layout{
     display: flex;
@@ -1420,7 +1410,6 @@ footer{
 }
 
 .camp-story .main-card{
-  /* width: 948px; */
     padding-right: 27px;
 }
 
@@ -1443,7 +1432,6 @@ footer{
 }
 
 .main-card .icon{
-  /* padding: 7px 10px 14px 10px; */
   padding-right: 10px;
   padding-bottom: 7px;
   font-size: 24px;
@@ -1451,6 +1439,8 @@ footer{
 }
 
 .main-card img {
+  width: 948px;
+  height: 584px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -1485,7 +1475,9 @@ footer{
 }
 
 .small-card img{
-    border-radius: 10px 10px 0 0;
+  width: 297px;
+  height: 173px;
+  border-radius: 10px 10px 0 0;
 }
 
 .hero .hero-content-subtitle{

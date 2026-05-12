@@ -310,29 +310,6 @@ p {
 .Button-Big {
   font-size: var(--button--big);
 }
-/* h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-  line-height: 81px;
-  color: var(--white);
-} */
-
-/* h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-  line-height: 81px;
-  color: var(--white);
-} */
-
-/* h1{
-  font-family: Pretentard;
-  font-weight: bold;
-  font-size: var(--text-title-xl);
-  line-height: 81px;
-  color: var(--white);
-} */
 
 h2{
   font-family: Pretentard;
@@ -520,10 +497,7 @@ section {
   right: 0;
   color: var(--text-muted);
 }
-/* .faq_more {
-  display: flex;
-  justify-content: flex-end;
-} */
+
 .fqa_question {
   display: flex;
   justify-content: space-between;
