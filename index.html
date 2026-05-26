@@ -12,8 +12,23 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css">
   </head>
+  
   <body>
+    <div id="popup" class="popup">
+      <h3>오르미 부트캠프 신청 사이트 리뉴얼 프로젝트</h3>
+      <h4>본 사이트는 팀 프로젝트 포트폴리오 사이트입니다.</h4>
+      <p>과정명:오르미 프론트엔드 13기</p>
+      <p>제작 기간: 2026.04.30 ~ 2026.05.12</p>
+      <p>개발환경:HTML,CSS</p>
+      <p>소스 관리:<span id="github"><a href="https://github.com/Polao63/est_fe_13_1st_project">Github</a></span></p>
+      <div id="agreeAndExit">
+        <input type="checkbox" id="agree" />
+        <label for="agree">오늘 하루 안보기</label>
+        <button>닫기</button>
+      </div>
+    </div>
   <!-- <body> -->
   <!-- 헤더 -->
   <!-- 강채희 -->
@@ -494,5 +509,29 @@
         </div>
      </footer>
      <!-- 강채희 -->
+
+    <script>
+      const popup = document.querySelector("#popup");
+      const popupCloseBtn = popup.querySelector("button");
+      const agree = document.querySelector("#agree");
+
+      popup.style.display = document.cookie.includes("popup=오르미 캠프 팝업 안보기") ? "none" : "block";
+
+      popupCloseBtn.addEventListener('click', () => {
+        if(agree.checked){
+          createCookie('popup','오르미 캠프 팝업 안보기',1);
+        }
+        else{
+           createCookie('popup','오르미 캠프 팝업 안보기',-1);
+        }
+        popup.style.display = 'none';
+      });
+
+      function createCookie(name, value, expire){
+        let today = new Date();
+        today.setDate(today.getDate() + expire);
+        document.cookie = `${name}=${value}; Expires=${today.toString()}`;
+      }
+    </script>
   </body>
 </html>
